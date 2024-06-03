@@ -42,16 +42,16 @@
                 font-size: fonts.$medium_font_size;
             }
 
-            input {
-                border: none;
-                font-size: fonts.$xxsmall_font_size;
-                letter-spacing: fonts.$medium_letter_spacing;
-                color: colors.$placeholder-color;
+                input {
+                    border: none;
+                    font-size: fonts.$xxsmall_font_size;
+                    letter-spacing: fonts.$medium_letter_spacing;
+                    color: colors.$placeholder-color;
 
-                &:focus {
-                    background-color: colors.$button-focused-color;
+                    &:focus {
+                        background-color: colors.$button-focused-color;
+                    }
                 }
-            }
 
             span {
                 font-size: fonts.$xxsmall_font_size;
@@ -451,6 +451,24 @@
 
 /* Center content on medium screens and smaller */
 @media (max-width: 576px) {
+    .input-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-container {
+        .icon-group {
+            p {
+                font-size: fonts.$xxxsmall_font_size;
+            }
+        }
+    }
+
     .img-eight {
         .overlay-container {
             h2 {

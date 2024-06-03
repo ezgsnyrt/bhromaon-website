@@ -12214,6 +12214,17 @@ textarea.form-control-lg {
 }
 /* Center content on medium screens and smaller */
 @media (max-width: 576px) {
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .icon-container .icon-group p {
+    font-size: 12px;
+  }
   .img-eight .overlay-container h2, .img-eight .overlay-container .h2 {
     font-size: 24px;
   }
