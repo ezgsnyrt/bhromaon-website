@@ -12008,6 +12008,54 @@ textarea.form-control-lg {
   width: 180px;
   height: 53px;
 }
+.background-image.img-eight {
+  min-height: 731px;
+  background-image: url("../images/image-eight.png");
+  display: flex;
+  justify-content: center;
+}
+.background-image.img-eight .overlay-container {
+  position: absolute;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  border-radius: 0;
+}
+.background-image.img-eight .overlay-container h2, .background-image.img-eight .overlay-container .h2 {
+  margin-bottom: 10%;
+  color: #FFFFFF;
+  font-size: 36px;
+}
+.background-image.img-eight .overlay-container .card-container {
+  margin-top: 0;
+}
+.background-image.img-eight .overlay-container .card-container .image-container {
+  width: 40%;
+  height: 100% !important;
+}
+.background-image.img-eight .overlay-container .card-container .image-container img {
+  height: 100%;
+}
+.background-image.img-eight .overlay-container .card-container .card {
+  width: 60%;
+  border: none;
+  background-color: #333333;
+  border-radius: 0%;
+}
+.background-image.img-eight .overlay-container .card-container .card .card-body h5, .background-image.img-eight .overlay-container .card-container .card .card-body .h5 {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.background-image.img-eight .overlay-container .card-container .card .card-body p {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 2rem;
+}
+.background-image.img-eight .overlay-container .card-container .card .card-body p .fa-quote-left {
+  color: #5B73F4;
+  font-size: 36px;
+}
 
 .card-container {
   margin-top: 5%;

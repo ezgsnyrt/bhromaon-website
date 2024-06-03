@@ -212,6 +212,66 @@
         }
     }
 
+    &.img-eight {
+        min-height: 731px;
+        background-image: url("../images/image-eight.png");
+        display: flex;
+        justify-content: center;
+
+        .overlay-container {
+            position: absolute;
+            flex-direction: column;
+            width: 60%;
+            height: 100%;
+            border-radius: 0;
+
+            h2 {
+                margin-bottom: 10%;
+                color: colors.$custom-text-color;
+                font-size: fonts.$xlarge_font_size;
+            }
+
+
+            .card-container {
+                margin-top: 0;
+
+                .image-container {
+                    width: 40%;
+                    height: 100% !important;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .card {
+                    width: 60%;
+                    border: none;
+                    background-color: colors.$custom-background-color;
+                    border-radius: 0%;
+
+                    .card-body {
+                        h5 {
+                            font-size: fonts.$small_font_size;
+                            font-family: fonts.$primary_font-family;
+                            font-weight: fonts.$light_font_weight;
+                        }
+
+                        p {
+                            font-size: fonts.$xsmall_font_size;
+                            font-family: fonts.$primary_font-family;
+                            line-height: fonts.$high_line_height;
+
+                            .fa-quote-left {
+                                color: colors.$custom-button-color;
+                                font-size: fonts.$xlarge_font_size;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
 
