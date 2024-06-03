@@ -126,6 +126,49 @@
         }
     }
 
+    &.img-six {
+        min-height: 700px;
+        background-image: url("../images/image-six.png");
+
+        .overlay-container {
+            position: absolute;
+            left:10%;
+            width: 80%;
+            height: 100%;
+            border-radius: 0;
+
+            .card-container {
+                .card {
+                    background-color: colors.$background-color;
+                    color: colors.$custom-text-color;
+                    opacity: .9;
+                    border-radius: 0%;
+
+                    .card-heading {
+                        font-size: fonts.$small_font_size;
+                        letter-spacing: fonts.$xxsmall_letter_spacing;
+                    }
+
+                    .card-body h5:nth-child(2) {
+                        font-size: fonts.$small_font_size;
+                    }
+
+                    .card-info {
+                        font-size: fonts.$xsmall_font_size;
+                        font-family: fonts.$primary_font-family;
+                    }
+
+                    .btn {
+                        background: colors.$custom-button-color;
+                        color: colors.$custom-text-color;
+                        width: 180px;
+                        height: 53px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .card-container {
