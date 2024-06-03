@@ -11828,5 +11828,76 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.image-one {
+  height: 100%;
+  min-height: 820px;
+  background-image: url(../images/image-one.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.background-image {
+  top: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background-image.img-one {
+  min-height: 820px;
+  background-image: url("../images/image-one.png");
+}
+.background-image.img-one .overlay-container {
+  flex-direction: column;
+}
+.background-image.img-one .overlay-container h1, .background-image.img-one .overlay-container .h1,
+.background-image.img-one .overlay-container h6,
+.background-image.img-one .overlay-container .h6,
+.background-image.img-one .overlay-container input,
+.background-image.img-one .overlay-container .btn,
+.background-image.img-one .overlay-container span {
+  font-family: "Josefin Sans", sans-serif;
+}
+.background-image.img-one .overlay-container h1, .background-image.img-one .overlay-container .h1,
+.background-image.img-one .overlay-container h6,
+.background-image.img-one .overlay-container .h6,
+.background-image.img-one .overlay-container .btn,
+.background-image.img-one .overlay-container span {
+  color: #FFFFFF;
+}
+.background-image.img-one .overlay-container h1, .background-image.img-one .overlay-container .h1 {
+  letter-spacing: 4.8px;
+}
+.background-image.img-one .overlay-container h6, .background-image.img-one .overlay-container .h6 {
+  font-weight: 500;
+  letter-spacing: 6.82px;
+  font-size: 22px;
+}
+.background-image.img-one .overlay-container input {
+  border: none;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: #999999;
+}
+.background-image.img-one .overlay-container .btn {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  background: #5B73F4;
+}
+.background-image.img-one .overlay-container .btn:hover {
+  background: #999999;
+}
+.background-image.img-one .overlay-container span {
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=main.css.map */
