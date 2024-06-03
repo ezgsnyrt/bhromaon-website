@@ -11935,10 +11935,14 @@ textarea.form-control-lg {
   font-size: 24px;
   letter-spacing: 2.4px;
   font-weight: 700;
+  cursor: default;
 }
 .background-image .overlay-container .navbar li a {
   font-size: 14px;
   font-family: "Aleo", serif;
+}
+.background-image .overlay-container .navbar li:hover {
+  background-color: #333333;
 }
 .background-image.img-six {
   min-height: 700px;
@@ -12078,7 +12082,7 @@ textarea.form-control-lg {
 }
 .icon-container .icon-group {
   width: 100%;
-  max-width: 20%;
+  max-width: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12110,6 +12114,7 @@ textarea.form-control-lg {
   letter-spacing: 3.36px;
   font-weight: 700;
   margin-top: 4rem;
+  text-align: center;
 }
 .footer .footer-subtitle {
   font-size: 16px;
@@ -12117,6 +12122,45 @@ textarea.form-control-lg {
 }
 .footer .list-inline-item a:hover {
   background-color: #F15F34;
+}
+
+@media (max-width: 1440px) {
+  .img-one h6, .img-one .h6 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .icon-container {
+    justify-content: space-between !important;
+    width: 62% !important;
+  }
+  .icon-container .line-image {
+    top: 20% !important;
+    left: 22.7% !important;
+  }
+  .img-eight .overlay-container h2, .img-eight .overlay-container .h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1024px) {
+  .icon-container {
+    justify-content: space-between !important;
+    width: 70% !important;
+  }
+  .icon-container .icon-group img {
+    margin-top: 5% !important;
+  }
+  .icon-container .line-image {
+    width: 60% !important;
+    top: 23% !important;
+    left: 19.8% !important;
+  }
+  .img-eight .overlay-container {
+    width: 80% !important;
+  }
+  .img-eight .overlay-container .card-container .image-container {
+    width: 40%;
+    height: auto !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

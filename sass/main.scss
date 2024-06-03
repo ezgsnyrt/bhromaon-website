@@ -117,11 +117,16 @@
                 font-size: fonts.$large_font_size;
                 letter-spacing: fonts.$small_letter_spacing;
                 font-weight: fonts.$bold_font_weight;
+                cursor: default;
             }
 
             li a {
                 font-size: fonts.$xxsmall_font_size;
                 font-family: fonts.$secondary_font-family;
+            }
+
+            li:hover {
+                background-color: colors.$custom-background-color;
             }
         }
     }
@@ -298,7 +303,7 @@
 
     .icon-group {
         width: 100%;
-        max-width: 20%;
+        max-width: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -337,6 +342,7 @@
         letter-spacing: fonts.$large_letter_spacing;
         font-weight: fonts.$bold_font_weight;
         margin-top: 4rem;
+        text-align: center;
     }
 
     .footer-subtitle {
@@ -346,5 +352,66 @@
 
     .list-inline-item a:hover {
         background-color: colors.$link-color;
+    }
+}
+
+
+//Make the project responsive for large screen sizes
+@media (max-width: 1440px) {
+    .img-one h6 {
+        font-size: fonts.$xxxsmall_font_size;
+        text-align: center;
+    }
+
+    .icon-container {
+        justify-content: space-between !important;
+        width: 62% !important;
+
+        .line-image {
+            top: 20% !important;
+            left: 22.7% !important;
+        }
+    }
+
+    .img-eight {
+        .overlay-container {
+            h2 {
+                font-size: fonts.$xlarge_font_size;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .icon-container {
+        justify-content: space-between !important;
+        width: 70% !important;
+
+        .icon-group {
+            img {
+                margin-top: 5% !important;
+            }
+        }
+
+        .line-image {
+            width: 60% !important;
+            top: 23% !important;
+            left: 19.8% !important;
+        }
+    }
+
+    .img-eight {
+        .overlay-container {
+            width: 80% !important;
+
+            .card-container {
+                // flex-direction: column !important;
+
+                .image-container {
+                    width: 40% ;
+                    height: auto !important;
+                }
+            }
+        }
     }
 }
