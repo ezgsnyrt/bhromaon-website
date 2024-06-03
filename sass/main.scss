@@ -65,32 +65,76 @@
             }
         }
     }
-}
 
-.overlay-container {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    border-radius: 10px;
+    &.img-two {
+        min-height: 685px;
+        background-image: url("../images/image-two.png");
 
-    .navbar {
-        bottom: 0;
-        height: 10%;
-        background-color: colors.$custom-button-color;
-        position: absolute;
-        width: 100%;
-
-        .navbar-brand {
-            font-size: fonts.$large_font_size;
-            letter-spacing: fonts.$small_letter_spacing;
-            font-weight: fonts.$bold_font_weight;
-        }
-
-        li a {
-            font-size: fonts.$xxsmall_font_size;
+        .card-heading {
+            font-size: fonts.$xlarge_font_size;
             font-family: fonts.$secondary_font-family;
         }
+
+        .card-info {
+            font-family: fonts.$primary_font-family;
+            font-size: fonts.$xsmall_font_size;
+            letter-spacing: fonts.$xsmall_letter_spacing;
+        }
+
+        .btn {
+            background: colors.$custom-button-color;
+            color: colors.$custom-text-color;
+            font-family: fonts.$secondary_font-family;
+            letter-spacing: fonts.$xxxxsmall_letter_spacing;
+        }
+
+        .image-container:nth-child(1) {
+            margin-bottom: 2%;
+        }
+    }
+
+    .overlay-container {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 10px;
+
+        .navbar {
+            bottom: 0;
+            height: 10%;
+            background-color: colors.$custom-button-color;
+            position: absolute;
+            width: 100%;
+
+            .navbar-brand {
+                font-size: fonts.$large_font_size;
+                letter-spacing: fonts.$small_letter_spacing;
+                font-weight: fonts.$bold_font_weight;
+            }
+
+            li a {
+                font-size: fonts.$xxsmall_font_size;
+                font-family: fonts.$secondary_font-family;
+            }
+        }
+    }
+}
+
+.card-container {
+    margin-top: 5%;
+
+    .card {
+        border: none;
+        padding: 20px;
+    }
+}
+
+.image-container {
+    height: 45%;
+
+    img {
+        width: 100%;
     }
 }

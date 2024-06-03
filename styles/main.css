@@ -11890,8 +11890,29 @@ textarea.form-control-lg {
   font-size: 14px;
   letter-spacing: 2.8px;
 }
-
-.overlay-container {
+.background-image.img-two {
+  min-height: 685px;
+  background-image: url("../images/image-two.png");
+}
+.background-image.img-two .card-heading {
+  font-size: 36px;
+  font-family: "Aleo", serif;
+}
+.background-image.img-two .card-info {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+.background-image.img-two .btn {
+  background: #5B73F4;
+  color: #FFFFFF;
+  font-family: "Aleo", serif;
+  letter-spacing: 1.2px;
+}
+.background-image.img-two .image-container:nth-child(1) {
+  margin-bottom: 2%;
+}
+.background-image .overlay-container {
   position: absolute;
   top: 0;
   width: 100%;
@@ -11899,21 +11920,36 @@ textarea.form-control-lg {
   display: flex;
   border-radius: 10px;
 }
-.overlay-container .navbar {
+.background-image .overlay-container .navbar {
   bottom: 0;
   height: 10%;
   background-color: #5B73F4;
   position: absolute;
   width: 100%;
 }
-.overlay-container .navbar .navbar-brand {
+.background-image .overlay-container .navbar .navbar-brand {
   font-size: 24px;
   letter-spacing: 2.4px;
   font-weight: 700;
 }
-.overlay-container .navbar li a {
+.background-image .overlay-container .navbar li a {
   font-size: 14px;
   font-family: "Aleo", serif;
+}
+
+.card-container {
+  margin-top: 5%;
+}
+.card-container .card {
+  border: none;
+  padding: 20px;
+}
+
+.image-container {
+  height: 45%;
+}
+.image-container img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
