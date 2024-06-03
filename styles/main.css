@@ -11899,5 +11899,21 @@ textarea.form-control-lg {
   display: flex;
   border-radius: 10px;
 }
+.overlay-container .navbar {
+  bottom: 0;
+  height: 10%;
+  background-color: #5B73F4;
+  position: absolute;
+  width: 100%;
+}
+.overlay-container .navbar .navbar-brand {
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  font-weight: 700;
+}
+.overlay-container .navbar li a {
+  font-size: 14px;
+  font-family: "Aleo", serif;
+}
 
 /*# sourceMappingURL=main.css.map */

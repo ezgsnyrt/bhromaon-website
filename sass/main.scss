@@ -74,4 +74,23 @@
     height: 100%;
     display: flex;
     border-radius: 10px;
+
+    .navbar {
+        bottom: 0;
+        height: 10%;
+        background-color: colors.$custom-button-color;
+        position: absolute;
+        width: 100%;
+
+        .navbar-brand {
+            font-size: fonts.$large_font_size;
+            letter-spacing: fonts.$small_letter_spacing;
+            font-weight: fonts.$bold_font_weight;
+        }
+
+        li a {
+            font-size: fonts.$xxsmall_font_size;
+            font-family: fonts.$secondary_font-family;
+        }
+    }
 }
