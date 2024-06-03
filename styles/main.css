@@ -12162,5 +12162,41 @@ textarea.form-control-lg {
     height: auto !important;
   }
 }
+/* Center content on medium screens and smaller */
+@media (max-width: 768px) {
+  .background-left,
+  .background-right {
+    width: 100%;
+  }
+  .overlay-container {
+    width: 100%;
+    left: 0 !important;
+    justify-content: center;
+  }
+  .img-two .overlay-container {
+    flex-direction: column !important;
+  }
+  .img-two .overlay-container div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+  }
+  .img-two .overlay-container div:nth-child(2) .image-container {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+  }
+  .img-eight .overlay-container {
+    width: 100% !important;
+  }
+  .img-eight .overlay-container .card-container {
+    width: 100%;
+  }
+  .img-eight .overlay-container .card-container .card {
+    align-self: center;
+  }
+  .img-eight .overlay-container .card-container .image-container {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

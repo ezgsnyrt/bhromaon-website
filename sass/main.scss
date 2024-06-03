@@ -415,3 +415,51 @@
         }
     }
 }
+
+/* Center content on medium screens and smaller */
+@media (max-width: 768px) {
+    .background-left,
+    .background-right {
+        width: 100%;
+    }
+    .overlay-container {
+        width: 100%;
+        left: 0 !important;
+        justify-content: center;
+    }
+
+    .img-two {
+        .overlay-container {
+            flex-direction: column !important;
+
+            div:nth-child(2) {
+                display: flex;
+                flex-direction: row;
+
+                .image-container {
+                    width: 100%;
+                    display: flex !important;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .img-eight {
+        .overlay-container {
+            width: 100% !important;
+
+            .card-container {
+                width: 100%;
+
+                .card {
+                    align-self: center;
+                }
+
+                .image-container {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
