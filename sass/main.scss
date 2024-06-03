@@ -2,7 +2,6 @@
 @use "colors";
 @import "../node_modules/normalize-scss/sass/normalize";
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import 'images';
 @import 'buttons';
 
 .background-image {
@@ -48,14 +47,9 @@
                 font-size: fonts.$xxsmall_font_size;
                 letter-spacing: fonts.$medium_letter_spacing;
                 color: colors.$placeholder-color;
-            }
 
-            .btn {
-                font-size: fonts.$xxsmall_font_size;
-                letter-spacing: fonts.$xxxsmall_letter_spacing;
-                background: colors.$custom-button-color;
-                &:hover {
-                    background: colors.$placeholder-color;
+                &:focus {
+                    background-color: colors.$button-focused-color;
                 }
             }
 
@@ -79,13 +73,6 @@
             font-family: fonts.$primary_font-family;
             font-size: fonts.$xsmall_font_size;
             letter-spacing: fonts.$xsmall_letter_spacing;
-        }
-
-        .btn {
-            background: colors.$custom-button-color;
-            color: colors.$custom-text-color;
-            font-family: fonts.$secondary_font-family;
-            letter-spacing: fonts.$xxxxsmall_letter_spacing;
         }
 
         .image-container:nth-child(1) {
@@ -123,6 +110,11 @@
             li a {
                 font-size: fonts.$xxsmall_font_size;
                 font-family: fonts.$secondary_font-family;
+
+                &:focus {
+                    background-color: colors.$button-focused-color;
+                    text-decoration: underline;
+                }
             }
 
             li:hover {
@@ -162,13 +154,6 @@
                         font-size: fonts.$xsmall_font_size;
                         font-family: fonts.$primary_font-family;
                     }
-
-                    .btn {
-                        background: colors.$custom-button-color;
-                        color: colors.$custom-text-color;
-                        width: 180px;
-                        height: 53px;
-                    }
                 }
             }
         }
@@ -204,13 +189,6 @@
                     .card-info {
                         font-size: fonts.$xsmall_font_size;
                         font-family: fonts.$primary_font-family;
-                    }
-
-                    .btn {
-                        background: colors.$custom-button-color;
-                        color: colors.$custom-text-color;
-                        width: 180px;
-                        height: 53px;
                     }
                 }
             }
@@ -350,8 +328,15 @@
         letter-spacing: fonts.$xsmall_letter_spacing;
     }
 
-    .list-inline-item a:hover {
-        background-color: colors.$link-color;
+    .list-inline-item a {
+        &:hover {
+            background-color: colors.$link-color;
+        }
+
+        &:focus {
+            background-color: colors.$button-focused-color;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -458,6 +443,42 @@
 
                 .image-container {
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Center content on medium screens and smaller */
+@media (max-width: 576px) {
+    .img-eight {
+        .overlay-container {
+            h2 {
+                font-size: 24px;
+            }
+            .card-container {
+                width: 100%;
+                flex-direction: column !important;
+
+                .image-container {
+                    width: 100% !important;
+                }
+
+                .card {
+                    width: 100% !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+
+                    .card-body {
+                        h5 {
+                            font-size: 20px !important;
+                        }
+
+                        p {
+                            font-size: 14px !important;
+                            line-height: 1rem !important;
+                        }
+                    }
                 }
             }
         }
