@@ -11974,6 +11974,40 @@ textarea.form-control-lg {
   width: 180px;
   height: 53px;
 }
+.background-image.img-seven {
+  min-height: 700px;
+  background-image: url("../images/image-seven.png");
+}
+.background-image.img-seven .overlay-container {
+  position: absolute;
+  right: 10%;
+  width: 80%;
+  height: 100%;
+  border-radius: 0;
+}
+.background-image.img-seven .overlay-container .card-container .card {
+  background-color: #232323;
+  color: #FFFFFF;
+  opacity: 0.9;
+  border-radius: 0%;
+}
+.background-image.img-seven .overlay-container .card-container .card .card-heading {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.background-image.img-seven .overlay-container .card-container .card .card-body h5:nth-child(2), .background-image.img-seven .overlay-container .card-container .card .card-body .h5:nth-child(2) {
+  font-size: 20px;
+}
+.background-image.img-seven .overlay-container .card-container .card .card-info {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.background-image.img-seven .overlay-container .card-container .card .btn {
+  background: #5B73F4;
+  color: #FFFFFF;
+  width: 180px;
+  height: 53px;
+}
 
 .card-container {
   margin-top: 5%;
