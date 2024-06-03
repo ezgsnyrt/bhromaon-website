@@ -12101,4 +12101,22 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+.footer .footer-title,
+.footer .footer-subtitle {
+  font-family: "Josefin Sans", sans-serif;
+}
+.footer .footer-title {
+  font-size: 24px;
+  letter-spacing: 3.36px;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+.footer .footer-subtitle {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+.footer .list-inline-item a:hover {
+  background-color: #F15F34;
+}
+
 /*# sourceMappingURL=main.css.map */

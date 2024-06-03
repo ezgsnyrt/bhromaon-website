@@ -272,7 +272,6 @@
             }
         }
     }
-
 }
 
 .card-container {
@@ -324,5 +323,28 @@
         img {
             width: 100%;
         }
+    }
+}
+
+.footer {
+    .footer-title,
+    .footer-subtitle {
+        font-family: fonts.$primary_font-family;
+    }
+
+    .footer-title {
+        font-size: fonts.$large_font_size;
+        letter-spacing: fonts.$large_letter_spacing;
+        font-weight: fonts.$bold_font_weight;
+        margin-top: 4rem;
+    }
+
+    .footer-subtitle {
+        font-size: fonts.$xsmall_font_size;
+        letter-spacing: fonts.$xsmall_letter_spacing;
+    }
+
+    .list-inline-item a:hover {
+        background-color: colors.$link-color;
     }
 }
